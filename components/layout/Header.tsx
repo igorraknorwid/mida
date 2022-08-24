@@ -45,13 +45,24 @@ export default function Header() {
         animate={active ? "open" : "closed"}
         variants={variants}
         initial={false}
-        className='header__mobile_menu z-0 fixed top-12 left-0 right-0 w-5/6 mx-auto md:hidden border bg-white p-4 pb-0 '
+        transition={{ duration: 1 }}
+        className='header__mobile_menu z-0 fixed top-12 left-0 right-0 w-5/6 mx-auto md:hidden border bg-white p-4 pb-4 '
       >
         <Navbar
           liStyle='pb-4'
           aStyleActive='font-semibold'
           clickHandler={clickHandler}
         />
+        <div className='mt-5 text-sky-500'>
+          <Link href={"/maketa"}> Darmowa Maketa</Link>
+        </div>
+        {/* <div>
+          <Link href={"/maketa"}>
+            <a className='bg-inherit hover:bg-sky-500 border  text-sky-500 hover:text-white border-sky-500 hover:border-white rounded-lg  py-3 px-4 font-semibold transition-colors'>
+              Darmowa Maketa
+            </a>
+          </Link>
+        </div> */}
       </motion.div>
       <header
         className={`flex justify-center items-center bg-white ${
