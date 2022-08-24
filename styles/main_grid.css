@@ -5,17 +5,32 @@ body {
 }
 
 #__next {
-  position: relative;
+  /* position: relative;
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%;
+  grid-template-columns: 100%; */
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   font-family: "Poppins", sans-serif;
   font-family: "DM Serif Display", serif;
 }
 
-main {
+/* main {
   min-height: 100vh;
+} */
+
+main {
+  flex-grow: 1;
+}
+
+header,
+main,
+footer,
+.indicator {
+  flex-shrink: 0;
 }
 
 @media (max-width: 640px) {

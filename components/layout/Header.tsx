@@ -56,13 +56,6 @@ export default function Header() {
         <div className='mt-5 text-sky-500'>
           <Link href={"/maketa"}> Darmowa Maketa</Link>
         </div>
-        {/* <div>
-          <Link href={"/maketa"}>
-            <a className='bg-inherit hover:bg-sky-500 border  text-sky-500 hover:text-white border-sky-500 hover:border-white rounded-lg  py-3 px-4 font-semibold transition-colors'>
-              Darmowa Maketa
-            </a>
-          </Link>
-        </div> */}
       </motion.div>
       <header
         className={`flex justify-center items-center bg-white ${
@@ -73,7 +66,7 @@ export default function Header() {
             : "header__slim border-b-2 border-sky-400"
         }`}
       >
-        <div className='flex justify-between items-center w-full md:w-full  lg:w-5/6  px-2 md:px-8   md:mx-auto'>
+        <div className='flex justify-between items-center w-full md:w-full  lg:w-5/6  px-2 md:px-8 mx-auto md:mx-auto'>
           <div
             className={`${
               init
@@ -104,7 +97,7 @@ export default function Header() {
               <div>
                 <Link href={"/maketa"}>
                   <a className='bg-inherit hover:bg-sky-500 border  text-sky-500 hover:text-white border-sky-500 hover:border-white rounded-lg  py-3 px-4 font-semibold transition-colors'>
-                    Free Maketa
+                    Darmowa Maketa
                   </a>
                 </Link>
               </div>
@@ -123,7 +116,7 @@ export default function Header() {
         </div>
       </header>
 
-      <div className='h-px' ref={myRef}></div>
+      <div className='indicator h-2' ref={myRef}></div>
     </>
   );
 }

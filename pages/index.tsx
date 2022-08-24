@@ -39,7 +39,7 @@ const Home: NextPage = () => {
       <Header />
 
       <main>
-        <div className='flex justify-between items-center w-full mx-3 md:w-4/6 md:mx-auto'>
+        <div className='flex justify-between items-center w-full  md:w-4/6 mx-auto md:mx-auto '>
           <h1 className='text-3xl font-bold underline'>Hello world!</h1>
           <div
             style={{
