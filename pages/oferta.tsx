@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Tworzenie stron internetowych Zielona Góra</title>
+        <title>Oferta</title>
         <meta
           name='description'
           content='Tworzenie stron internetowych Zielona Góra'
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
 
       <main>
         <div className='flex justify-between items-center w-full mx-3 md:w-4/6 md:mx-auto'>
-          <h1 className='text-3xl font-bold underline'>Hello world!</h1>
+          <h1 className='text-3xl font-bold underline'>Oferta</h1>
           <div
             style={{
               backgroundColor: "red",

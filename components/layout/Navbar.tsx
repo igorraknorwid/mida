@@ -9,6 +9,7 @@ interface INavbar {
   liStyle?: string;
   aStyle?: string;
   aStyleActive?: string;
+  clickHandler?: () => void;
 }
 
 export default function Navbar({
@@ -17,6 +18,7 @@ export default function Navbar({
   liStyle,
   aStyle,
   aStyleActive,
+  clickHandler,
 }: INavbar) {
   const router = useRouter();
   const path = router.asPath;
@@ -31,7 +33,11 @@ export default function Navbar({
         {links.map((item, index) => {
           if (path === item.slug) {
             return (
-              <li key={index} className={liStyle && liStyle}>
+              <li
+                onClick={clickHandler ? clickHandler : () => {}}
+                key={index}
+                className={liStyle && liStyle}
+              >
                 <Link href={item.slug}>
                   <a className={aStyleActive && aStyleActive}>{item.text}</a>
                 </Link>
@@ -39,7 +45,11 @@ export default function Navbar({
             );
           }
           return (
-            <li key={index} className={liStyle && liStyle}>
+            <li
+              onClick={clickHandler ? clickHandler : () => {}}
+              key={index}
+              className={liStyle && liStyle}
+            >
               <Link href={item.slug}>
                 <a className={aStyle && aStyle}>{item.text}</a>
               </Link>

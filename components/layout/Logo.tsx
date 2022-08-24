@@ -5,7 +5,7 @@ import React from "react";
 export default function Logo() {
   return (
     <Link href='/'>
-      <a>
+      <a className=''>
         <Image
           src='/logo.svg'
           alt='MIDADIGITAL'

@@ -30,12 +30,12 @@ header,
 }
 
 .header__fat {
-  animation: fat var(--animationTime) linear;
+  animation: fat var(--animationTime) linear forwards;
 }
 
 .header__slim {
   height: var(--minHeaderHeight);
-  animation: slim var(--animationTime) linear;
+  animation: slim var(--animationTime) linear forwards;
 }
 
 @keyframes slim {

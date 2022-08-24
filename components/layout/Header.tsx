@@ -33,14 +33,25 @@ export default function Header() {
       }
     });
   }, []);
+
+  const clickHandler = () => {
+    console.log("ClickHandler");
+    setState(false);
+  };
+
   return (
     <>
       <motion.div
         animate={active ? "open" : "closed"}
         variants={variants}
+        initial={false}
         className='header__mobile_menu z-0 fixed top-12 left-0 right-0 w-5/6 mx-auto md:hidden border bg-white p-4 pb-0 '
       >
-        <Navbar liStyle='pb-4' aStyleActive='font-semibold' />
+        <Navbar
+          liStyle='pb-4'
+          aStyleActive='font-semibold'
+          clickHandler={clickHandler}
+        />
       </motion.div>
       <header
         className={`flex justify-center items-center bg-white ${
@@ -51,7 +62,7 @@ export default function Header() {
             : "header__slim border-b-2 border-sky-400"
         }`}
       >
-        <div className='flex justify-between items-center w-full md:w-4/6 mx-3   md:mx-auto'>
+        <div className='flex justify-between items-center w-full md:w-full  lg:w-5/6  px-2 md:px-8   md:mx-auto'>
           <div
             className={`${
               init
