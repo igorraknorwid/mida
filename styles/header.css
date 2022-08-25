@@ -56,7 +56,7 @@ header,
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .header__fat,
   .header__slim,
   .header__init {
@@ -110,7 +110,7 @@ header,
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
   .header__logo_box_init,
   .header__logo_box_fat,
   .header__logo_box_slim {

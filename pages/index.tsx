@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import React from "react";
+import Landing from "../components/Landing";
 import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 
@@ -38,8 +40,9 @@ const Home: NextPage = () => {
 
       <Header />
 
-      <main>
-        <div className='flex justify-between items-center w-full  md:w-4/6 mx-auto md:mx-auto '>
+      <main className='m-0'>
+        <Landing />
+        <div className='flex flex-col justify-between items-center w-full  md:w-4/6 mx-auto md:mx-auto '>
           <h1 className='text-3xl font-bold underline'>Hello world!</h1>
           <div
             style={{

@@ -5,22 +5,11 @@ body {
 }
 
 #__next {
-  /* position: relative;
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%; */
   min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  font-family: "Poppins", sans-serif;
-  font-family: "DM Serif Display", serif;
 }
-
-/* main {
-  min-height: 100vh;
-} */
 
 main {
   flex-grow: 1;

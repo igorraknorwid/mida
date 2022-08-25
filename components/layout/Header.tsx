@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const variants = {
   open: { opacity: 1, y: 0 },
-  closed: { opacity: 0, y: "-100%" },
+  closed: { opacity: 0, y: "-200%" },
 };
 
 interface IHeader {}
@@ -41,12 +41,13 @@ export default function Header() {
 
   return (
     <>
+      <div className='indicator h-px' ref={myRef}></div>
       <motion.div
         animate={active ? "open" : "closed"}
         variants={variants}
         initial={false}
         transition={{ duration: 1 }}
-        className='header__mobile_menu z-0 fixed top-12 left-0 right-0 w-5/6 mx-auto md:hidden border bg-white p-4 pb-4 '
+        className='z-10 header__mobile_menu  fixed top-12 left-0 right-0 w-5/6 mx-auto md:hidden border bg-white p-4 pb-4 '
       >
         <Navbar
           liStyle='pb-4'
@@ -58,15 +59,15 @@ export default function Header() {
         </div>
       </motion.div>
       <header
-        className={`flex justify-center items-center bg-white ${
+        className={`z-50 flex justify-center items-center bg-white ${
           init
-            ? "header__init border-b-2 md:border-none border-sky-400"
+            ? "header__init border-b-1 md:border-none border-sky-400"
             : state
-            ? "header__fat border-b-2 md:border-none border-sky-400"
+            ? "header__fat border-b-1 md:border-none border-sky-400"
             : "header__slim border-b-2 border-sky-400"
         }`}
       >
-        <div className='flex justify-between items-center w-full md:w-full  lg:w-5/6  px-2 md:px-8 mx-auto md:mx-auto'>
+        <div className='flex justify-between items-center w-full md:w-full lg:w-5/6 xl:w-5/6 2xl:w-4/6  px-2 lg:px-2 m-2  lg:m-0'>
           <div
             className={`${
               init
@@ -88,10 +89,10 @@ export default function Header() {
                 : "header__navbar_box_slim"
             }`}
           >
-            <div className='hidden md:flex justify-center items-center gap-6'>
+            <div className='hidden md:flex justify-center items-center gap-2 md:gap-8 xl:gap-20 '>
               <Navbar
-                ulStyle='flex justify-center items-center gap-3'
-                liStyle='hover:opacity-50 transition-all'
+                ulStyle='flex justify-center items-center gap-4 lg:gap-6 xl:gap-8'
+                liStyle='hover:opacity-50 transition-all text-sm lg:text-base'
                 aStyleActive='font-semibold'
               />
               <div>
@@ -115,8 +116,6 @@ export default function Header() {
           </div>
         </div>
       </header>
-
-      <div className='indicator h-2' ref={myRef}></div>
     </>
   );
 }

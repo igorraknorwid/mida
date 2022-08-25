@@ -4,6 +4,7 @@
 @import "./main_grid.css";
 @import "./header.css";
 @import "./burger.css";
+@import "./landing.css";
 
 html,
 body {
@@ -29,4 +30,8 @@ a {
 #__next {
   font-family: "Poppins", sans-serif;
   font-family: "DM Serif Display", serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
 }

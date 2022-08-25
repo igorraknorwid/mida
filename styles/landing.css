@@ -1,0 +1,51 @@
+.landingImage {
+  z-index: 0;
+}
+
+.landingInsideBox {
+  z-index: 1;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(45, 49, 53, 0.51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landingContainer {
+  position: relative;
+  height: 620px;
+  z-index: 0;
+}
+
+.landingHeader {
+  color: #00a3d9;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+}
+
+.box {
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.maketButton {
+  color: #00a3d9;
+  border: 1px solid #00a3d9;
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.maketButton:hover {
+  color: white;
+  border: 1px solid #00a3d9;
+  background-color: #00a3d9;
+}
