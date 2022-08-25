@@ -47,14 +47,14 @@ export default function Header() {
         variants={variants}
         initial={false}
         transition={{ duration: 1 }}
-        className='z-10 header__mobile_menu  fixed top-12 left-0 right-0 w-5/6 mx-auto md:hidden border bg-white p-4 pb-4 '
+        className='z-10 header__mobile_menu  fixed top-12 left-0 right-0 w-5/6 mx-auto md:hidden border bg-white p-4 pb-6 '
       >
         <Navbar
-          liStyle='pb-4'
+          liStyle='pb-6'
           aStyleActive='font-semibold'
           clickHandler={clickHandler}
         />
-        <div className='mt-5 text-sky-500'>
+        <div className='mt-3 text-sky-500'>
           <Link href={"/maketa"}> Darmowa Maketa</Link>
         </div>
       </motion.div>
