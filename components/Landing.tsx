@@ -6,7 +6,7 @@ const Landing = () => {
       <video
         style={{
           width: "100%",
-          height: "620px",
+          height: "720px",
           objectFit: "cover",
         }}
         src='/bg2.mp4'
