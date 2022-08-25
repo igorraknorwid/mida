@@ -9,8 +9,6 @@ const variants = {
   closed: { opacity: 0, y: "-200%" },
 };
 
-interface IHeader {}
-
 export default function Header() {
   const [init, setInit] = React.useState(true);
   const [state, setState] = React.useState(true);
@@ -47,7 +45,7 @@ export default function Header() {
         variants={variants}
         initial={false}
         transition={{ duration: 1 }}
-        className='z-10 header__mobile_menu  fixed top-12 left-0 right-0 w-5/6 mx-auto md:hidden border bg-white p-4 pb-6 '
+        className='z-10 header__mobile_menu  fixed top-12 left-0 right-0 w-5/6 mx-auto md:hidden border bg-white p-4 pb-6 border-b-2 border-sky-400 '
       >
         <Navbar
           liStyle='pb-6'

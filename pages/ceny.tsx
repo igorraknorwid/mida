@@ -38,8 +38,8 @@ const Home: NextPage = () => {
 
       <Header />
 
-      <main>
-        <div className='flex justify-between items-center w-full mx-3 md:w-4/6 md:mx-auto'>
+      <main className='m-0'>
+        <div className='flex justify-between items-center w-full  md:w-4/6 md:mx-auto'>
           <h1 className='text-3xl font-bold underline'>Ceny</h1>
           <div
             style={{

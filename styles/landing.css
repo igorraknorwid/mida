@@ -10,14 +10,14 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(45, 49, 53, 0.51);
+  background-color: rgba(61, 62, 63, 0.51);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .landingContainer {
   position: relative;
-  height: 720px;
+  height: 620px;
   z-index: 0;
 }
 
