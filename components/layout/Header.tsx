@@ -61,9 +61,9 @@ export default function Header() {
       <header
         className={`z-50 flex justify-center items-center bg-white ${
           init
-            ? "header__init border-b-1 md:border-none border-sky-400"
+            ? "header__init border-b-2 md:border-none border-sky-400"
             : state
-            ? "header__fat border-b-1 md:border-none border-sky-400"
+            ? "header__fat border-b-2 md:border-none border-sky-400"
             : "header__slim border-b-2 border-sky-400"
         }`}
       >

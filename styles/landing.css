@@ -17,13 +17,13 @@
 }
 .landingContainer {
   position: relative;
-  height: 620px;
+  height: 520px;
   z-index: 0;
 }
 
 .landingHeader {
   color: #00a3d9;
-  font-weight: 600;
+  font-weight: 300;
   letter-spacing: 0.2em;
   font-weight: 500;
 }
@@ -42,6 +42,15 @@
   font-weight: 500;
   border-radius: 4px;
   transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .maketButton {
+    color: white;
+    border: 1px solid #00a3d9;
+    background-color: #00a3d9;
+    font-weight: 300;
+  }
 }
 
 .maketButton:hover {
