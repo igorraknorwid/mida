@@ -42,6 +42,15 @@ const Home: NextPage = () => {
         <div className='flex justify-between items-center w-full md:w-4/6 md:mx-auto'>
           <h1 className='text-3xl font-bold underline'>Kontakt</h1>
         </div>
+        <div className='w-4/6 mx-auto'>
+          <iframe
+            width='100%'
+            height='500'
+            id='gmap_canvas'
+            src='https://maps.google.com/maps?q=65-610%20&t=&z=17&ie=UTF8&iwloc=&output=embed'
+            scrolling='no'
+          ></iframe>
+        </div>
       </main>
 
       <Footer />
