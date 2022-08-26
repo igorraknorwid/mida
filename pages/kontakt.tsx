@@ -42,7 +42,7 @@ const Home: NextPage = () => {
         <div className='flex justify-between items-center w-full md:w-4/6 md:mx-auto'>
           <h1 className='text-3xl font-bold underline'>Kontakt</h1>
         </div>
-        <div className='w-4/6 mx-auto'>
+        <div className='w-full lg:w-4/6 mx-auto mt-16'>
           <iframe
             width='100%'
             height='500'
