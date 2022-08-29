@@ -28,7 +28,7 @@ const Landing = () => {
           <p className='mb-12 text-base lg:text-xl text-center'>
             Bez kosztów i przyszłych zobowiązań!
           </p>
-          <button className='maketButton uppercase poppins text-center'>
+          <button className='maketButton uppercase poppins text-center rounded-lg py-4 px-8'>
             <Link href='/maketa'>
               <a>DARMOWA MAKETA</a>
             </Link>

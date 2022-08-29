@@ -6,7 +6,7 @@
 @import "./burger.css";
 @import "./landing.css";
 @import "./uslugi.css";
-
+@import "./landing_nav_link.css";
 html,
 body {
   width: 100%;

@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Oferta</title>
+        <title>Ceny</title>
         <meta
           name='description'
           content='Tworzenie stron internetowych Zielona Góra'

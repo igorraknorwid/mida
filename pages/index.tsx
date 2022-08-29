@@ -7,6 +7,8 @@ import Landing from "../components/Landing";
 import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 import Uslugi from "../components/Uslugi";
+import Ceny from "../components/Ceny";
+import Portfolio from "../components/Portfolio";
 
 const Home: NextPage = () => {
   return (
@@ -44,6 +46,8 @@ const Home: NextPage = () => {
       <main className='m-0'>
         <Landing />
         <Uslugi />
+        <Ceny />
+        <Portfolio />
         <div className='flex flex-col justify-between items-center w-full  md:w-4/6 mx-auto md:mx-auto '>
           <h1 className='text-3xl font-bold underline'>Hello world!</h1>
           <div
@@ -54,6 +58,7 @@ const Home: NextPage = () => {
             }}
           ></div>
         </div>
+        <div></div>
       </main>
 
       <Footer />

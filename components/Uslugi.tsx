@@ -51,43 +51,44 @@ export default function Uslugi() {
         </p>
         <div className='gridbox mt-4'>
           {state.map((item) => (
-            <div
-              key={item.id}
-              className='card flex flex-col justify-center items-center p-3 py-10 m-3 hover:bg-white rounded-xl hover:rounded-xl  cursor-pointer '
-              onMouseOver={() => {
-                setState((s) =>
-                  s.map((i) => {
-                    if (item.id === i.id) {
-                      return { ...i, isHover: true };
-                    }
-                    return { ...i, isHover: false };
-                  })
-                );
-              }}
-              onMouseOut={() => {
-                setState((s) =>
-                  s.map((i) => {
-                    return { ...i, isHover: false };
-                  })
-                );
-              }}
-            >
-              <img
-                className={item.isHover ? "trans" : ""}
-                src={item.src}
-                alt={item.text}
-                height='64px'
-                width='64px'
-              />
-              <h2 className='darkColor text-2xl mt-2 text-center'>
-                {item.text}
-              </h2>
-            </div>
+            <Link key={item.id} href={`/oferta#${item.id}`}>
+              <div
+                className='card flex flex-col justify-center items-center p-3 py-10 m-3 hover:bg-white rounded-xl hover:rounded-xl  cursor-pointer '
+                onMouseOver={() => {
+                  setState((s) =>
+                    s.map((i) => {
+                      if (item.id === i.id) {
+                        return { ...i, isHover: true };
+                      }
+                      return { ...i, isHover: false };
+                    })
+                  );
+                }}
+                onMouseOut={() => {
+                  setState((s) =>
+                    s.map((i) => {
+                      return { ...i, isHover: false };
+                    })
+                  );
+                }}
+              >
+                <img
+                  className={item.isHover ? "trans" : ""}
+                  src={item.src}
+                  alt={item.text}
+                  height='64px'
+                  width='64px'
+                />
+                <h2 className='darkColor text-2xl mt-2 text-center poppins'>
+                  {item.text}
+                </h2>
+              </div>
+            </Link>
           ))}
         </div>
 
-        <Link href='/kontakt#section2'>
-          <p className='text-sm uppercase font-semibold cursor-pointer landing_nav_link '>
+        <Link href='/oferta'>
+          <p className='  text-sm uppercase font-semibold cursor-pointer landing_nav_link poppins '>
             Nasze Usługi
           </p>
         </Link>
