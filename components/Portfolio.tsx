@@ -8,7 +8,7 @@ export default function Portfolio() {
   const [pages, setPages] = React.useState(3);
   React.useEffect(() => {
     console.log("PORTFOLIO", window.innerWidth);
-    if (window.innerWidth > 640) {
+    if (window.innerWidth > 768) {
       setPages(3);
       setIsVisible(true);
     } else {
@@ -18,7 +18,7 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <div className='w-4/6  m-auto  flex justify-center items-center flex-col'>
+    <div className='w-full  lg:w-5/6 xl:w-4/6  m-auto  flex justify-center items-center flex-col'>
       <h3 className='text-center darkColor leading-normal font-medium text-5xl mb-1 mt-20 '>
         Portfolio
       </h3>

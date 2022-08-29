@@ -26,9 +26,9 @@ export default function Slider({ pages }: ISlider) {
     },
     {
       id: 2,
-      title: "Dla adwokatów",
+      title: "Forma",
       text: "Some Text Here",
-      src: "/images/1.png",
+      src: "/images/2.png",
       isHover: false,
       bg: "rgba(89, 34, 241, 0.884)",
     },
@@ -93,7 +93,7 @@ export default function Slider({ pages }: ISlider) {
           );
         }}
       >
-        <div className='title text-2xl uppercase leading-normal'>
+        <div className='title text-lg xl:text-2xl uppercase leading-normal'>
           {el.title}
         </div>
 
@@ -109,7 +109,9 @@ export default function Slider({ pages }: ISlider) {
         </div>
         <button
           className={
-            el.isHover ? "btn text-lg poppins" : "btn2 text-lg poppins"
+            el.isHover
+              ? "btn text-base  xl:text-lg poppins"
+              : "btn2 text-base   xl:text-lg poppins"
           }
         >
           <Link href='/realizacie'>Zobacz węcej</Link>
