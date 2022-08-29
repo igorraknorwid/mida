@@ -7,6 +7,7 @@
 @import "./landing.css";
 @import "./uslugi.css";
 @import "./landing_nav_link.css";
+@import "./slide.css";
 html,
 body {
   width: 100%;

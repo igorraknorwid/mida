@@ -42,12 +42,12 @@ const Home: NextPage = () => {
         </div>
         <div className='w-full lg:w-4/6 mx-auto mt-16'>
           <iframe
+            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2459.9161553021872!2d15.484284015785777!3d51.93548287970773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4706115816f3744f%3A0x66608bd4ddc4c!2zUnlkemEtxZptaWfFgmVnbywgNjUtNjEwIFppZWxvbmEgR8OzcmE!5e0!3m2!1sru!2spl!4v1661750646689!5m2!1sru!2spl'
             width='100%'
             height='450'
             style={{ border: "0" }}
-            loading='lazy'
             allowFullScreen
-            src='https://www.google.com/maps/embed/v1/place?q=place_id:ChIJYSF8D1gRBkcRs8aS083idVg&key=AIzaSyADJL7YY5-BevP9nXk_SI9Fo0c4GbJtUvI'
+            loading='lazy'
           ></iframe>
         </div>
       </main>

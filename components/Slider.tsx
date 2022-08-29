@@ -93,7 +93,7 @@ export default function Slider({ pages }: ISlider) {
           );
         }}
       >
-        <div className='title text-2xl uppercase leading-normal '>
+        <div className='title text-2xl uppercase leading-normal'>
           {el.title}
         </div>
 
@@ -107,8 +107,12 @@ export default function Slider({ pages }: ISlider) {
             height={393}
           />
         </div>
-        <button className={el.isHover ? "btn" : "btn2"}>
-          <Link href='/kontakt'>Zobacz węcej</Link>
+        <button
+          className={
+            el.isHover ? "btn text-lg poppins" : "btn2 text-lg poppins"
+          }
+        >
+          <Link href='/realizacie'>Zobacz węcej</Link>
         </button>
       </div>
     </>

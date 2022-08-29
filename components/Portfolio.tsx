@@ -29,8 +29,11 @@ export default function Portfolio() {
         {isVisible && <Slider pages={pages} />}
       </div>
 
-      <Link href='/kontakt#section2'>
-        <p className='text-center text-sm uppercase font-semibold cursor-pointer landing_nav_link leading-normal my-20'>
+      <Link href='/realizacie'>
+        <p
+          style={{ letterSpacing: "5px" }}
+          className='text-center text-sm uppercase poppins tracking-widest cursor-pointer landing_nav_link leading-normal my-20'
+        >
           Porfolio
         </p>
       </Link>

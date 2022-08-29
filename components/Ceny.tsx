@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Ceny() {
   return (
-    <section className='flex justify-center items-center bg-sky-400 text-white py-5'>
+    <section className='flex justify-center items-center bg-sky-400 text-white py-4'>
       <div className='flex flex-col lg:flex-row justify-center text-center w-5/6 py-5 gap-10'>
         <Link href='/ceny'>
           <p className='text-2xl cursor-pointer flex justify-center items-center'>

@@ -48,17 +48,7 @@ const Home: NextPage = () => {
         <Uslugi />
         <Ceny />
         <Portfolio />
-        <div className='flex flex-col justify-between items-center w-full  md:w-4/6 mx-auto md:mx-auto '>
-          <h1 className='text-3xl font-bold underline'>Hello world!</h1>
-          <div
-            style={{
-              backgroundColor: "red",
-              minHeight: "2000px",
-              width: "100%",
-            }}
-          ></div>
-        </div>
-        <div></div>
+        <div className='flex flex-col justify-between items-center w-full  md:w-4/6 mx-auto md:mx-auto '></div>
       </main>
 
       <Footer />

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -43,7 +44,7 @@ export default function Uslugi() {
           Usługi do projektowania stron internetowych dla małych firm
         </h3>
         <p className=' text-gray-500 text-base md:text-xl text-justify'>
-          Mida Digital to firma zajmująca się projektowaniem stron internetowych
+          MidaDigital to firma zajmująca się projektowaniem stron internetowych
           w Zielonej Górze.
         </p>
         <p className=' text-gray-500 text-base md:text-xl text-justify'>
@@ -88,7 +89,10 @@ export default function Uslugi() {
         </div>
 
         <Link href='/oferta'>
-          <p className='  text-sm uppercase font-semibold cursor-pointer landing_nav_link poppins '>
+          <p
+            style={{ letterSpacing: "5px" }}
+            className='text-center text-sm uppercase poppins tracking-widest cursor-pointer landing_nav_link leading-normal '
+          >
             Nasze Usługi
           </p>
         </Link>
